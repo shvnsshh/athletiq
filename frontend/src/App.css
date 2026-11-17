@@ -640,3 +640,427 @@
   }
 
 }
+/* ONBOARDING */
+
+.onboarding-page {
+  min-height: 100vh;
+  background: #090909;
+}
+
+.onboarding-navbar {
+  height: 75px;
+  padding: 0 8%;
+  border-bottom: 1px solid #292929;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.onboarding-navbar > span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #999;
+}
+
+.onboarding-container {
+  max-width: 850px;
+  padding: 75px 25px;
+  margin: auto;
+}
+
+.onboarding-header {
+  text-align: center;
+}
+
+.onboarding-header h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin: 20px 0;
+  letter-spacing: -2px;
+}
+
+.onboarding-header h1 span {
+  color: #90002a;
+}
+
+.onboarding-header p {
+  color: #999;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 520px;
+  margin: auto;
+}
+
+.progress-container {
+  margin: 50px 0 30px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.progress-track {
+  height: 5px;
+  background: #292929;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #90002a;
+  transition: width 0.3s ease;
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  gap: 10px;
+}
+
+.step-labels span {
+  color: #666;
+  font-size: 10px;
+}
+
+.step-labels span.completed {
+  color: #c16c86;
+}
+
+.onboarding-card {
+  background: #151515;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.form-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.form-heading > svg {
+  color: #b04a68;
+  margin-top: 3px;
+}
+
+.form-heading h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.form-heading p {
+  color: #999;
+  font-size: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group label {
+  color: #ddd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 15px;
+  background: #202020;
+  border: 1px solid #393939;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #90002a;
+}
+
+.input-group select option {
+  background: #202020;
+}
+
+.full-width {
+  margin-bottom: 25px;
+}
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.selection-card {
+  background: #202020;
+  border: 1px solid #393939;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.selection-card:hover {
+  border-color: #800020;
+}
+
+.selection-card.selected {
+  background: #35101d;
+  border-color: #90002a;
+}
+
+.selection-card h3 {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.selection-card p {
+  color: #999;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.selection-card svg {
+  color: #d28ba0;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 25px;
+  margin-top: 40px;
+}
+
+.back-btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.back-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.onboarding-footer {
+  text-align: center;
+  color: #666;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+
+  .onboarding-container {
+    padding: 55px 18px;
+  }
+
+  .onboarding-header h1 {
+    font-size: 36px;
+  }
+
+  .onboarding-card {
+    padding: 23px;
+  }
+
+  .form-grid,
+  .selection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-labels span {
+    font-size: 8px;
+  }
+
+  .onboarding-navbar {
+    padding: 0 5%;
+  }
+
+  .onboarding-navbar > span {
+    font-size: 8px;
+  }
+
+}
+/* DASHBOARD */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: var(--background, #080b0a);
+  color: white;
+}
+
+.dashboard-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 70px 25px;
+}
+
+.dashboard-welcome {
+  margin-bottom: 65px;
+}
+
+.dashboard-welcome h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.dashboard-welcome h1 span,
+.dashboard-cta h2 span {
+  color: #a3e635;
+}
+
+.dashboard-section {
+  margin-bottom: 55px;
+}
+
+.dashboard-profile {
+  margin-bottom: 55px;
+}
+
+.dashboard-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.dashboard-section-heading h2 {
+  font-size: 23px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.dashboard-card {
+  padding: 25px;
+  border: 1px solid #292e2b;
+  border-radius: 14px;
+  background: #111613;
+  min-width: 0;
+}
+
+.dashboard-card span {
+  display: block;
+  font-size: 11px;
+  color: #9ba49e;
+  margin-bottom: 12px;
+}
+
+.dashboard-card h3 {
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-goals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.dashboard-goal-card {
+  padding: 25px;
+  background: #111613;
+  border: 1px solid #292e2b;
+  border-radius: 14px;
+}
+
+.dashboard-goal-card svg {
+  color: #a3e635;
+  margin-bottom: 15px;
+}
+
+.dashboard-cta {
+  padding: 55px 35px;
+  background: #111613;
+  border: 1px solid #292e2b;
+  border-radius: 20px;
+  margin-top: 70px;
+}
+
+.dashboard-cta h2 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 20px 0;
+}
+
+.dashboard-cta p {
+  color: #a5aea7;
+  max-width: 550px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.dashboard-cta button:disabled {
+  color: #fff;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-error {
+  color: #ff7777;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  .dashboard-grid,
+  .dashboard-goals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-container {
+    padding: 40px 18px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .dashboard-grid,
+  .dashboard-goals {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cta {
+    padding: 30px 20px;
+  }
+
+}
